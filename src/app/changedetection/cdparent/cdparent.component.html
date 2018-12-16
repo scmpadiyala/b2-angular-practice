@@ -1,0 +1,12 @@
+<div>
+  <h4>Parent Component</h4>
+
+  Student IDs :
+  <ol>
+    <li *ngFor="let id of stdids">{{ id }}</li>
+  </ol>
+  <br />
+  Add ID : <input type="text" (change)="handleAddID($event)" /> <br />
+  <!-- <app-cdchild [stdids]="stdids"></app-cdchild> -->
+  <app-cdchild1 [stdids]="stdids"></app-cdchild1>
+</div>

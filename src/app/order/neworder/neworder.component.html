@@ -1,0 +1,15 @@
+<div>
+  <h4>New Order : Sample Order</h4>
+
+  Order Name : <input type="text" [(ngModel)]="isDirty" /> <br /><br />
+
+  Order List :
+
+  <ol>
+    <li *ngFor="let order of orderList">{{ order.description }}</li>
+  </ol>
+
+  <a routerLink="orderlist">Order List</a> <br /><br />
+
+  <router-outlet></router-outlet>
+</div>

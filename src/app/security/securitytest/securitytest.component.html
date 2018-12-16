@@ -1,0 +1,21 @@
+<div>
+  <h3>securitytest works!</h3>
+
+  <h4>My text planned for insertion :</h4>
+  {{ mytext }}
+
+  <br />
+
+  <h4>Unsafe Inner HTML</h4>
+  <p [innerHtml]="mytext"></p>
+
+  <h4>Safe Inner HTML</h4>
+  <p [innerHtml]="safemytext"></p>
+
+  <hr />
+  <h4>URL Safe test {{ unsafeURL }}</h4>
+
+  <a [href]="unsafeURL"> Click me - unsafe</a> <br /><br />
+
+  <a [href]="safeURL"> Click me - Safe</a> <br /><br />
+</div>
